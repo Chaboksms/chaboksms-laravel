@@ -1,0 +1,45 @@
+{  
+    "name":"chaboksms/laravel",
+    "description":"Laravel Chaboksms Integration",
+    "type":"laravel-package",
+    "homepage": "http://github.com/Chaboksms/chaboksms-laravel",
+    "keywords":[  
+       "laravel",
+       "chaboksms",
+       "sms",
+       "api",
+	   "webservice",
+	   "SMS webservice"
+    ],
+    "license":"MIT",
+    "version": "1.0.5",
+	"authors": [
+        {
+            "name" : "Chaboksms",
+            "email": "info@chaboksms.ir"
+        },
+        {
+            "name": "Zanyar Hasani",
+            "email": "hasanizanyar@gmail.com"
+        }
+    ],
+    "require":{  
+        "chaboksms/php": "1.0.5"
+    },
+    "autoload":{  
+       "psr-4":{  
+        "Chaboksms\\Laravel\\":"src/"
+       }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chaboksms\\Laravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "Chaboksms": "Chaboksms\\Laravel\\Facade"
+            }
+        }
+    },
+    "minimum-stability" : "stable"
+ }
